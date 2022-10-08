@@ -1,15 +1,15 @@
 import React from "react";
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 
 //teachers
-import Teachers from "./Teachers/Teachers/Index";
-import AddTeacher from "./Teachers/AddTeacher/index";
+import Teachers from "./Teachers/Teachers/index.jsx";
+import AddTeacher from "./Teachers/AddTeacher/index.jsx";
 
 //requests
-import Requests from "./Requests/Requests/index";
-import UniqueTeacherRequests from "./Requests/UniqueTeacherRequests/index";
-import Request from "./Requests/Request/index";
+import Requests from "./Requests/Requests/index.jsx";
+import UniqueTeacherRequests from "./Requests/UniqueTeacherRequests/index.jsx";
+import Request from "./Requests/Request/index.jsx";
 
 const router = createBrowserRouter([
   {

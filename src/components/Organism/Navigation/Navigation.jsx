@@ -7,7 +7,7 @@ const Navigation = () => {
     <Nav>
       <NavList>
         <NavItem to="/" title="Teachers" />
-        <NavItem to="/teachers/add-teacher" title="Add teachers" />
+        <NavItem to="/teachers/add-teacher" title="Add teacher" />
         <NavItem to="/requests" title="Requests" />
       </NavList>
     </Nav>
