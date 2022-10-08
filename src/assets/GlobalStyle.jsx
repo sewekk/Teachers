@@ -11,5 +11,11 @@ export const GlobalStyle = createGlobalStyle`
             box-sizing: border-box;
         }
     }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
     
 `;
