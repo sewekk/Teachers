@@ -2,19 +2,24 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import { TeacherCard as Card } from "./index.styled";
 import TeacherCardHeader from "../../Atoms/TeacherCardHeader/index";
+import BaseLink from "../../Atoms/BaseLink/index";
 
 const TeacherCard = ({
-  teacherData: { firstName, lastName, description, areas },
+  teacherData: { firstName, lastName, description, areas, id },
 }) => {
   return (
     <Card>
       <TeacherCardHeader areas={areas}></TeacherCardHeader>
-      <h3>
-        {firstName}
-        {lastName}
-      </h3>
+      <div>
+        <span>{firstName}</span>
+        <span>{lastName}</span>
+      </div>
       <p>{description}</p>
-      <button>Contact Teacher</button>
+      <BaseLink
+        destination={`/teachers/contact/${id}`}
+        title={`Contact with coach ${firstName}`}
+        primary={true}
+      />
     </Card>
   );
 };
@@ -25,6 +30,7 @@ TeacherCard.propTypes = {
     lastName: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     areas: PropTypes.array.isRequired,
+    id: PropTypes.string.isRequired,
   }),
 };
 

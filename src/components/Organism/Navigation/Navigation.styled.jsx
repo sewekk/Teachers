@@ -4,7 +4,7 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   padding: 25px 15px;
-  background-color: #8d99ae;
+  background-color: #3f5478;
 `;
 
 export const NavList = styled.ul`

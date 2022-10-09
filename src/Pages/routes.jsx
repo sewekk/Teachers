@@ -5,6 +5,7 @@ import App from "../App";
 //teachers
 import Teachers from "./Teachers/Teachers/index.jsx";
 import AddTeacher from "./Teachers/AddTeacher/index.jsx";
+import ContactTeacher from "./Teachers/ContactTeacher/index.jsx";
 
 //requests
 import Requests from "./Requests/Requests/index.jsx";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/teachers/add-teacher",
         element: <AddTeacher />,
+      },
+      {
+        path: "/teachers/contact/:teacherID",
+        element: <ContactTeacher />,
       },
       {
         path: "/requests",
